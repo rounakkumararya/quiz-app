@@ -2,7 +2,9 @@
 
 Quiz platform where users can attempt quizzes, get instant feedback, and track their progress.Check the live demo website at [link](https://quiz-app-one-hazel.vercel.app/)
 
-![Screenshot of Quiz app](https://myoctocat.com/assets/images/base-octocat.svg)
+![Screenshot of Quiz app](https://github.com/rounakkumararya/quiz-app/blob/main/public/QuizApp.png?raw=true)
+
+![Screenshot of Quiz component](https://github.com/rounakkumararya/quiz-app/blob/main/public/quiz.png?raw=true)
 
 ## Installation
 
@@ -16,6 +18,12 @@ npm run dev
 ## Dependencies
 
 TailwindCSS
+
+## Instructions for Quiz
+
+1. For multiple-choice questions, select the one best answer (A, B, C, or D)
+2. For integer-type questions, write your numerical answer clearly.
+3. Each questions have a time limit of 30 seconds
 
 ## Contributing
 
