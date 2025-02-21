@@ -21,6 +21,8 @@ const Quiz = () => {
         return () => clearInterval(timer);
     }, [timeLeft]);
 
+    console.log(score);
+
 
     const handleNextQuestion = () => {
         if (questions[currentQuestion].type === "Integer") {
@@ -52,7 +54,7 @@ const Quiz = () => {
         }
 
 
-        if (selectedAnswer === questions[currentQuestion].correctAnswer) {
+        if (selectedAnswer === questions[currentQuestion].correctAnswer && !showCorrectAnswer) {
             console.log("correct");
             setScore(score + 1);
             setSelectedAnswer(selectedAnswer);
