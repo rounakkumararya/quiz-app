@@ -8,6 +8,7 @@ const Hero = () => {
     const [quizStarted, setQuizStarted] = useState(false);
     const [attempts, setAttempts] = useState([]);
 
+
     useEffect(() => {
         const fetchAttempts = async () => {
             const db = await openDB();
@@ -17,8 +18,8 @@ const Hero = () => {
             request.onsuccess = () => setAttempts(request.result);
         };
         fetchAttempts();
-    }, [quizStarted, attempts]);
-
+    }, []);
+    console.log("call");
 
 
     return (
@@ -70,7 +71,7 @@ const Hero = () => {
             ) : (
                 <>
 
-                    <Quiz />
+                    <Quiz attempts={attempts} />
                 </>
             )}
 

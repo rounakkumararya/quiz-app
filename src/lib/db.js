@@ -13,6 +13,7 @@ export const openDB = () => {
         request.onsuccess = () => resolve(request.result);
         request.onerror = () => reject(request.error);
 
+        ;
     });
 };
 

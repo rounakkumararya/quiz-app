@@ -4,7 +4,7 @@ import { GiStopwatch } from 'react-icons/gi';
 import { saveAttempt } from '../lib/db';
 import History from './History';
 
-const Quiz = () => {
+const Quiz = (attempts) => {
     const [currentQuestion, setCurrentQuestion] = React.useState(0);
     const [showScore, setShowScore] = React.useState(false);
     const [score, setScore] = React.useState(0);
@@ -12,6 +12,7 @@ const Quiz = () => {
     const [timeLeft, setTimeLeft] = React.useState(30);
     const [selectedAnswer, setSelectedAnswer] = React.useState("");
     const [showCorrectAnswer, setShowCorrectAnswer] = React.useState(false);
+
 
     useEffect(() => {
         //for setting time intervals
@@ -24,6 +25,8 @@ const Quiz = () => {
 
         return () => clearInterval(timer);
     }, [timeLeft]);
+
+    console.log("call");
 
 
 
@@ -142,7 +145,7 @@ const Quiz = () => {
                 )
                 }
             </div >
-            <History />
+            <History attempts={attempts} />
         </div>
 
     )
