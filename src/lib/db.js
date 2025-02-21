@@ -12,7 +12,7 @@ export const openDB = () => {
         };
         request.onsuccess = () => resolve(request.result);
         request.onerror = () => reject(request.error);
-        console.log("db opened");
+
     });
 };
 
@@ -21,7 +21,7 @@ export const saveAttempt = async (score) => {
     const transaction = db.transaction(STORE_NAME, "readwrite");
     const store = transaction.objectStore(STORE_NAME);
     store.add({ score, timestamp: new Date() });
-    console.log("added to db");
+
 };
 
 export const deleteDb = async () => {
