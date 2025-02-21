@@ -34,7 +34,9 @@ const Quiz = () => {
 
                 setScore(score + 1);
                 setSelectedAnswer(integerAnswers);
-                alert("correct");
+
+            } else {
+                alert("Wrong answer.Right answer is " + questions[currentQuestion].correctAnswer);
             }
         }
         if (currentQuestion < questions.length - 1) {
@@ -49,13 +51,12 @@ const Quiz = () => {
             //if current question is the last question
 
             if (parseInt(integerAnswers) === parseInt(questions[currentQuestion].correctAnswer)) {
-                alert("correct");
+
                 saveAttempt(score + 1);
 
             } else {
                 saveAttempt(score);
             }
-            console.log(score);
             setShowScore(true);
         }
     };
