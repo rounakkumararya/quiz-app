@@ -89,7 +89,7 @@ const Quiz = (attempts) => {
 
     return (
 
-        <div className="flex gap-10 justify-between">
+        <div className="flex flex-col lg:flex-row gap-10 justify-between">
             <div className="w-full  min-w-[70%] p-16 mt-8  space-y-4   border border-gray-200 rounded-lg shadow-sm">
                 {/* show score if showScore is true */}
                 {showScore ? (
