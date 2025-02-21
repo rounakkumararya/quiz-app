@@ -1,8 +1,25 @@
-# React + Vite
+# Quiz app (React + Vite)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Quiz platform where users can attempt quizzes, get instant feedback, and track their progress.Check the live demo website at [link](https://quiz-app-one-hazel.vercel.app/)
 
-Currently, two official plugins are available:
+![Screenshot of Quiz app](https://myoctocat.com/assets/images/base-octocat.svg)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Installation
+
+This app is created using Vite. To install it locally on your computer download the project using the github and extract it, to run the project get inside the project folder and run
+
+```bash
+npm install
+npm run dev
+```
+
+## Dependencies
+
+TailwindCSS
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first
+to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
